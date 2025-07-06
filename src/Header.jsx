@@ -1,7 +1,7 @@
 
 function Header() {
   return (
-    <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
+    <header className="flex justify-between items-center p-8 bg-gray-800 text-white">
       <div className="flex items-center">
         <img src="/vite.svg" alt="Vite logo" className="h-8 w-8 mr-2" />
         <h1 className="text-xl font-bold">Anime List</h1>
