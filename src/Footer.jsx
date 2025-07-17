@@ -1,7 +1,11 @@
 
+import React, { useContext } from 'react';
+import { DarkModeContext } from './main';
+
 function Footer() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <footer className="bg-gray-800 text-white p-4 text-center">
+    <footer className={`p-4 text-center transition-colors duration-300 ${darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'}`}>
       <p className="text-sm">
         &copy; {new Date().getFullYear()} My Anime List. All rights reserved.
       </p>
